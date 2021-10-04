@@ -1,0 +1,101 @@
+
+@media screen and (max-width: 1025px){
+    header{
+        grid-template-columns: 2fr 3fr;
+    }
+
+    .restaurants {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .container {
+        width: 750px;
+    }
+}
+
+@media (max-width: 755px){
+
+    header {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .nav__list{
+        display: none;
+    }
+
+    .header__menu{
+        outline: none;
+        /*makes the button visible*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*since we are here, we can style it a little bit!*/
+    
+        font-size: 4vh;
+        border: none;
+        /*outline none removes the default blue border that appears anytime you click on the button*/
+        outline: none;
+        cursor: pointer;
+    }
+
+    
+    .nav__list {
+        display: none;
+    }
+    
+    .mobile-nav > .nav__item a{
+        padding: 0.8em;
+        margin: 2px;
+    }
+    
+    .mobile-nav.open {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #112d4e;
+    }
+
+    .nav__item {
+        margin: 10px 5px;
+    }
+    
+    .nav__item a{
+        padding:10px 5px;
+    }
+    .container {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    
+    header {
+        grid-template-columns: 3fr 1fr;
+    }
+    
+    .nav{
+        justify-content: center;
+    }
+
+    .container {
+        width: 325px;
+    }
+
+    .restaurants {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-image .jumbotron-image {
+        max-height: 375px;
+    }
+
+    .hero-image .text{
+        font-size: 2em;
+        top: 30%;
+    }
+
+    .reviews {
+        grid-template-columns: 1fr 1fr;
+    }
+}

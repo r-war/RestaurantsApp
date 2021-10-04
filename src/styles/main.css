@@ -1,0 +1,209 @@
+
+
+body{
+    margin: 0;
+    background-color : #f9f7f7;
+}
+p, span {
+    color: #112d4e;
+}
+
+a {
+    color: #3f72af;
+}
+main {
+    margin-bottom: 30px;
+}
+.skip-content-btn {
+    position: absolute;
+    transform: translate(-200px, 20px);
+    transition: transform 0.3s;
+    text-decoration: none;
+    background-color: #dbe2ef;
+    padding: 15px;
+    border: 1px solid rgba(219, 226, 239, 0.5);
+    line-height: 24px;
+    color: #3f72af;
+}
+
+.skip-content-btn:focus {
+    transform: translate(20px, 20px);
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+h1.title {
+    display: inline-block;
+    padding : 10px;
+}
+
+.header__menu {
+    outline: none;
+    display: none;
+    padding: 18px;
+}
+
+.mobile-nav{
+    display: none;
+}
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+ul.nav__list {
+    list-style: none;
+    
+}
+
+.nav__item {
+    display: inline-block;
+}
+
+li.nav__item > a {
+    text-decoration: none;
+    line-height: 24px;
+    padding: 15px;
+    font-size: 18px;
+}
+
+h2.subtitle {
+    text-align: center;
+}
+
+.hero-image{
+    position: relative;
+}
+
+.hero-image .jumbotron-image {
+    width: 100%;
+    max-height: 550px;
+    object-fit: cover;
+}
+
+.hero-image .text {
+    position: absolute;
+    font-size: 4em;
+    font-weight: bold;
+    top: 40%;
+    left: 0;
+    background-color: rgba(219,226,239,0.6);
+    padding:10px;
+}
+
+.restaurants {
+    display: grid;
+    grid-template-columns : 380px 380px 380px;
+    gap: 10px;
+}
+
+
+.restaurant {
+    color: #dbe2ef;
+}
+.card-image{
+    position: relative;
+}
+.card-image img{
+    width: 100%;
+    object-fit: cover;
+    max-height: 220px;
+    margin-bottom: 10px;
+}
+
+.card-image .location {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background-color: #dbe2ef;
+    padding:10px;
+}
+
+.card-title a{
+    font-size: 1.6em;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.card-description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.footer{
+    margin: 0px;
+    padding: 20px;
+    background-color: #dbe2ef;
+    text-align: center;
+    line-height: 1.5em;
+    font-weight: bold;
+}
+
+
+  /********************************
+    Restaurant
+  ********************************/
+
+  .resto-image__wrapper {
+      position: relative;
+  }
+
+  .resto-image__wrapper .resto-image {
+      width: 100%;
+  }
+
+  .resto-image__wrapper .favorite {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+  }
+
+  .resto__wrapper .resto__title {
+      padding: 0;
+      margin: 0;
+      margin-top: 10px;
+  }
+  .resto__wrapper .location {
+      padding: 0;
+      margin: 0;
+  }
+  .resto__wrapper .rating {
+      padding: 0;
+      margin: 0;
+  }
+
+  .resto__wrapper .rating i {
+    color: 	#ffd27d;
+  }
+  .resto__wrapper .description {
+      text-align: justify;
+      text-align-last: left;
+  }
+  .reviews {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .favorite {
+      background-color: #ffff00;
+      font-size: 36px;
+      padding: 8px 15px;
+      border-radius: 50%;
+      border: 1px solid #ffff00;
+  }
+
+  .message {
+      text-align: center;
+      margin: 0 auto;
+  }
